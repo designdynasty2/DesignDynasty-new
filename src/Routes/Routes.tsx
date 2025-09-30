@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "../Components/Layout";
 import { Login } from "../Auth/Login";
 import { ProtectedRoute, PublicOnlyRoute } from "./ProtectedRoutes";
@@ -19,7 +19,7 @@ import { Users } from "../Components/Admin/Users";
 import { SignUp } from "../Auth/SignUp";
 import { SignUpConfirm } from "../Auth/SignUpConfirm";
 
-const routes = createHashRouter([
+const routes = createBrowserRouter([
   {
     path: "/",
     element: <PublicOnlyRoute element={<WebLayout />} />,
@@ -29,31 +29,31 @@ const routes = createHashRouter([
         element: <HomePage />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <AboutPage />,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <ContactPage />,
       },
       // {
-      //   path: "/pricing",
+      //   path: "pricing",
       //   element: <PricingPage />,
       // },
       {
-        path: "/web-development",
+        path: "web-development",
         element: <WebDevelopemt />,
       },
       {
-        path: "/graphic-design",
+        path: "graphic-design",
         element: <GraphicDesign />,
       },
       {
-        path: "/mobile-developement",
+        path: "mobile-developement",
         element: <MobileDevelopemnt />,
       },
       {
-        path: "/services",
+        path: "services",
         element: <ServicesPage />,
       },
     ],

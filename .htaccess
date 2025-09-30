@@ -1,0 +1,11 @@
+# Enable URL rewriting
+RewriteEngine On
+RewriteBase /
+
+# If the requested file exists, serve it as-is
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect all other requests to index.html
+RewriteRule ^ index.html [L]
