@@ -38,7 +38,7 @@ body .MuiTypography-root {
   padding: 0px;
 }
 :root {
-  --primary:#ff7425;
+  --primary: #ff7425;
   --secondary: #ecf3ff;
   --text-primary: #1d2939;
   --text-secondary: #667085;
@@ -54,7 +54,7 @@ body .MuiTypography-root {
   --success-light: #ecfdf3;
   --white: #fff;
   --black: #000;
-  --navy:#1f294a;
+  --navy: #1f294a;
 }
 
 /* Scroll Bar Color Change */
@@ -2407,7 +2407,8 @@ textarea.w-select {
 }
 
 :root {
-  --black-body-color: #181818;
+  
+  --black-body-color: #181818; 
   --gainsboro-body: #e7e5e5;
   --white: white;
   --coral-primary-color: #ff7425;
@@ -10894,7 +10895,7 @@ blockquote {
     flex-direction: column !important;
     gap: 20px;
   }
-  .rotating-circle{
+  .rotating-circle {
     display: none;
   }
 }
